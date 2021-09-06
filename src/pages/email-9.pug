@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+html(lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="min-height: 100vh;")
+	include include/head.pug
+	+head('Mail-9')
+
+	body(style="min-height: 100vh;")
+		-var utm = '0404_bonuses';
+		-var link = '?utm_source=crm&utm_medium=email&utm_content=homepage&utm_campaign='+utm;
+
+		include ../blocks/mixins.pug						
+		<!-- BODY -->
+		table(align="center" border="0" bgcolor="#E5E5E5" cellpadding="0" cellspacing="0" width="100%" style="min-height: 100vh;")
+			tr 
+				td(align="center" valign="top" style="vertical-align: top;")
+					table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+						tr
+							+td-margin({height: 30 })
+						tr
+							td(align="center")
+								<!-- MARGIN-40 STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG HEADER-1 OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" class="display-width-inner" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		+td-margin({margin: 'mr-red'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- MARGIN-40 ENDS -->
+						tr
+							td(align="center")
+								include ../blocks/header/header-1.pug
+						tr
+							td(align="center")
+								<!-- TEXT-CONTENT STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG HEADER-1 OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" class="display-width-inner" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		+td-margin({margin: 'mr-red'})
+																	tr
+																		td.h2(align="left") Hi Lisa!!!
+																			br
+																			|dolor sit amet, consectetur
+																	tr
+																		+td-margin({margin: 'mr-salat'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- TEXT-CONTENT ENDS -->
+						tr
+							td(align="center")
+								<!-- COUPON STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG COUPON-1 OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width_cupon ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width_cupon + "px; vertical-align: top;")
+																table(align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_cupon + "px;")
+																	tr
+																		td(align="left" bgcolor="#F8F8FA" style="font-size: 0;")
+																			+IE({col: 2, width_col: '219', aling: 'center', valing: 'top'})
+																			div(style="display: inline-block; width: 100%; max-width: 219px; vertical-align: top;")
+																				<!-- TABLE LEFT -->
+																				table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																					tr
+																						td(align="center" style="padding: 15px 1px")
+																							table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 100%;")
+																								tr
+																									+td-margin({height: '25'})
+																								tr
+																									td(width="40")
+																										|&nbsp;
+																									td(align="center")
+																										table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+																											tr
+																												<!-- ID:TXT COUPON HEADING -->
+																												td.lead(align="left") Coupon
+																											tr
+																												<!-- ID:TXT COUPON SUBTITLE -->
+																												td.big-text(align="left") 60% 
+																													span.color-theme.big-text--small off
+																											tr
+																												+td-margin({margin: 'mr-violet'})
+																											tr
+																												td(align="left")
+																													+btn({img: 'btn__139_32-01.png', width: '139', height: '32'})
+																									<!-- ID:BR COUPON BORDER -->
+																									td(width="40" style="border-right: 1px solid #B9C6DA;")
+																										|&nbsp;
+																								tr
+																									+td-margin({height: '25'})
+																			+IE({col_td: 2, width_col: '390', aling: 'center', valing: 'top'})
+																			div(class="div-width" style="display: inline-block; width: 100%; max-width: 390px; vertical-align: top;")
+																				<!-- TABLE RIGHT -->
+																				table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																					tr
+																						td(align="left" style="padding: 15px 1px;")
+																							table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 100%;")
+																								tr
+																									+td-margin({height: '25'})
+																								tr
+																									td(width="40")
+																										|&nbsp;
+																									td(align="center")
+																										table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+																											tr
+																												+td-margin({height: '20'})
+																											tr
+																												<!-- ID:TXT COUPON -->
+																												td.lead(align="left") Enter the promo code 
+																													a.link(href="#" target="_blank") 85jsdfk-2
+																													|  and get a 60 discount% for the next purchase in our store or in the stores of our partners
+																											tr
+																												+td-margin({height: '15'})
+																									td(width="40")
+																										|&nbsp;
+																								tr
+																									+td-margin({height: '25'})
+																			|!{IE_TABLE_END}
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- COUPON ENDS -->
+						tr
+							td(align="center")
+								<!-- TEXT-CONTENT STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG TEXT-CONTENT-1 OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" class="display-width-inner" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		+td-margin({margin: 'mr-salat'})
+																	tr
+																		td.small-text(align="left") * The discount must be used before 25.05.2020
+																	tr
+																		+td-margin({margin: 'mr-viol'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- TEXT-CONTENT ENDS -->
+						tr
+							td(align="center")
+								include ../blocks/footer/footer-1.pug
+						tr
+							td(align="center")
+								<!-- MARGIN-40 STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG HEADER-1 OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" class="display-width-inner" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		+td-margin({margin: 'mr-red'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- MARGIN-40 ENDS -->
+						tr
+							+td-margin({height: 30 })
+
+
+		<!-- /BODY -->

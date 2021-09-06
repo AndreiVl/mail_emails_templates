@@ -1,0 +1,13 @@
+.code-text {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */ 
+	font-family: $font-main; 
+	font-size: 28px;
+	font-weight: 400; 
+	line-height: 36px;
+	color: $color-blue500;
+  text-transform: uppercase;
+  text-decoration: none;
+}

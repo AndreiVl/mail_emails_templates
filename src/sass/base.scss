@@ -1,0 +1,121 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+.bg-white {
+	background-color: #ffffff;
+}
+.bg-gray {
+	background-color: #e9eff3;
+}
+table {
+	border-spacing: 0;
+}
+.color-theme {
+	color: $color-theme;
+}
+.wraper {
+	word-break: normal;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	line-height: normal;
+	width: 100% !important;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.word-break {
+	word-break: break-all;
+	word-wrap: break-word;
+	display: block;
+}
+.container {
+	width: 100%;
+	max-width: $container;
+}
+.container__gutters {
+	mso-line-height-rule: exactly;
+	line-height: 16px;
+	font-size: 0;
+}
+.mail-body {
+	width: 100%;
+	max-width: $mail-body;
+}
+.divider {
+	border-top: 1px solid #cecece;
+}
+.divider-dark {
+	border-top: 1px solid $color-blue700;
+}
+.fs-pd-10 {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.center {
+	text-align: center;
+}
+.line-through {
+	text-decoration: line-through;
+}
+.td-tex-right {
+	text-align: right;
+}
+.intro-page__list {
+	/* 2 Block model */
+	margin: 25px 20px;
+	padding: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.intro-page__list li {
+	/* 3 Typography */
+	font-size: 20px;
+	line-height: 28px;
+	text-transform: capitalize;
+}
+.intro-page__list li a {
+	/* 2 Block model */
+	padding: 7px 15px;
+
+	/* 5 Animation */
+	transition: all 0.4s ease;
+}
+.intro-page__list li:first-child {
+	/* 2 Block model */
+	margin-bottom: 26px;
+
+	/* 3 Typography */
+	text-align: center;
+}
+.intro-page__list li:nth-child(2n) a {
+	/* 4 Visual */
+	background-color: #eee;
+}
+.intro-page__list a {
+	/* 2 Block model */
+	display: block;
+
+	/* 3 Typography */
+	color: #000000;
+	text-decoration: none;
+}
+.intro-page__list li a:hover {
+	/* 4 Visual */
+	background-color: rgba($color: rgb(105, 103, 103), $alpha: 0.4);
+}
+.intro-page__list li:first-child a:hover {
+	/* 4 Visual */
+	background-color: transparent;
+}
+.intro-page__list li:nth-child(2n) a:hover {
+	/* 4 Visual */
+	background-color: rgba($color: rgb(185, 185, 185), $alpha: 0.7);
+}
+.intro-page__list-title {
+	/* 3 Typography */
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: bold;
+}

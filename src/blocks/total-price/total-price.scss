@@ -1,0 +1,14 @@
+.total-price {
+  /* 2 Block model */
+  margin: 0;
+
+  /* 3 Typography */ 
+  font-family: $font-main; 
+  font-size: 20px;
+  font-weight: 700; 
+  line-height: 26px;
+  color: $color-theme;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

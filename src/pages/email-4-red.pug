@@ -1,0 +1,358 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+html(lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="min-height: 100vh;")
+	include include/head.pug
+	+head('Mail-4 Red')
+
+	body(style="min-height: 100vh;")
+		-var utm = '0404_bonuses';
+		-var link = '?utm_source=crm&utm_medium=email&utm_content=homepage&utm_campaign='+utm;
+
+		include ../blocks/mixins.pug						
+		<!-- BODY -->
+		table(align="center" border="0" bgcolor="#E5E5E5" cellpadding="0" cellspacing="0" width="100%" style="min-height: 100vh;")
+			tr 
+				td(align="center" valign="top" style="vertical-align: top;")
+					table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+						tr
+							+td-margin({height: 30 })
+						tr
+							td(align="center")
+								<!-- MARGIN-40 STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG MARGIN-40 OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		+td-margin({margin: 'mr-red'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- MARGIN-40 ENDS -->
+						tr
+							td(align="center")
+								include ../blocks/header/header-1.pug
+						tr
+							td(align="center")
+								<!-- MARGIN-40 STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG MARGIN-40 OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		+td-margin({margin: 'mr-red'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- MARGIN-40 ENDS -->
+						tr
+							td(align="center")
+								+title({title: 'Thanks for your order! invoice <span class="color-theme">#123456!</span>', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, mauris accumsan mattis amet in vulputate. ', width: "551"})
+						tr
+							td(align="center")
+								<!-- TEXT-CONTENT STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG CONTENT-1 OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		td(align="center")
+																			+btn({img: 'btn__202-01-red.png', width: '202', height: '54'})
+																	tr
+																		+td-margin({margin: 'mr-viol'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- TEXT-CONTENT ENDS -->
+						tr
+							td(align="center")
+								<!-- DATA-CONTENT STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG CONTENT-1 OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		td(align="center" style="font-size:0;")
+																			table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%;")
+																				tr
+																					td(align="center" style="font-size:0; width: 100%; max-width: 100%;")
+																						+IE({col: 2, width_col: '152', aling: 'center', valing: 'top'})
+																						div(style="display: inline-block;  width: 100%; max-width: 152px; vertical-align: top;")
+																							<!--TABLE LEFT-->
+																							table(align="right" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																								tr
+																									td(align="center")
+																										table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																											tr
+																												td(align="center")
+																													table(align="left" border="0" width="100%" cellpadding="0" cellspacing="0" style="width: auto !important;")
+																														tr
+																															td.h3(align="left") Delivery date:
+																														tr
+																															+td-margin({margin: 'mr-violet'})
+																														tr
+																															td.text(align="left") 04/22 – 04/25/18
+																														tr
+																															+td-margin({margin: 'mr-blue'})
+																														tr
+																															td.h3(align="left") Payment method:
+																														tr
+																															+td-margin({margin: 'mr-violet'})
+																														tr
+																															td.text(align="left") Master card, Visa
+																														tr
+																															+td-margin({margin: 'mr-blue'})
+																						+IE({col_td: 2, width_col: '458', aling: 'center', valing: 'top'})
+																						div(style="display: inline-block; width: 100%; max-width: 454px; vertical-align: top;")
+																							table(align="center" border="0" cellpadding="0" cellspacing="0" class="display-width-child" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																								tr
+																									td(align="center" style="font-size: 0;")
+																										+IE({col: 2, width_col: '290', aling: 'center', valing: 'top'})
+																										div( style="display:inline-block; width: 100%; max-width: 285px; vertical-align: top;")
+																											table(align="left" border="0" cellpadding="0" cellspacing="0" class="display-width-child" width="100%" style="width: 100%; max-width: 210px;border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																												tr
+																													td(width="100%" style="font-size:0;")
+																														|&nbsp;
+																										+IE({col_td: 2, width_col: '170', aling: 'center', valing: 'top'})
+																										div(style="display: inline-block; width: 100%; max-width: 164px; vertical-align: top;")
+																											<!--TABLE RIGHT-->
+																											table(align="right" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																												tr
+																													td(align="center")
+																														table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																															tr
+																																td(align="center")
+																																	table(align="center" border="0" width="100%" cellpadding="0" cellspacing="0" style="width: auto !important;")
+																																		tr
+																																			td.h3(align="left") Shipping details:
+																																		tr
+																																			+td-margin({margin: 'mr-blue'})
+																																		tr
+																																			td.text(align="left") Lisa Maccartur
+																																				br
+																																				|2088 S. Canondale Road
+																																				br
+																																				|Los Angeles, IL 60301
+																										|!{IE_TABLE_END}
+																						|!{IE_TABLE_END}
+																	tr
+																		+td-margin({margin: 'mr-salat'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- DATA-CONTENT ENDS -->
+						tr
+							td(align="center")
+								<!-- TABLE-PRICE STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG TABLE-PRICE OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		+td-margin({margin: 'mr-salat'})(class="divider-dark")
+																	tr
+																		td(align="center")
+																			table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																				tr
+																					td.h3(align="left" width="40") Item
+																					td.h3(align="center" width="100%") Qtu
+																					td.h3(align="rigth" width="40") Price
+																	tr
+																		+td-margin({margin: 'mr-salat'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- TABLE-PRICE ENDS -->
+						tr
+							td(align="center")
+								<!-- TABLE-PRICE STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG TABLE-PRICE OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		+td-margin({margin: 'mr-salat'})(class="divider")
+																	tr
+																		td(align="center")
+																			table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																				tr
+																					td.h3(align="left" width="265") Sanglasses
+																					td.h3(align="center" width="80") ×2
+																					td.h3(align="right" width="272") $309.99
+																				tr
+																					+td-margin({margin: 'mr-violet'})
+																				tr
+																					td.text(align="left" width="265") Lorem ipsum dolor sit amet 
+																						br
+																						|consectetur 
+																	tr
+																		+td-margin({margin: 'mr-salat'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- TABLE-PRICE ENDS -->
+						tr
+							td(align="center")
+								<!-- TABLE-PRICE STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG TABLE-PRICE OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		+td-margin({margin: 'mr-salat'})(class="divider")
+																	tr
+																		td(align="center")
+																			table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																				tr
+																					td.h3(align="left" width="265") Sanglasses
+																					td.h3(align="center" width="80") ×1
+																					td.h3(align="right" width="272") $109.99
+																				tr
+																					+td-margin({margin: 'mr-violet'})
+																				tr
+																					td.text(align="left" width="265") Lorem ipsum dolor sit amet 
+																						br
+																						|consectetur 
+																	tr
+																		+td-margin({margin: 'mr-salat'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- TABLE-PRICE ENDS -->
+						tr
+							td(align="center")
+								<!-- TABLE-PRICE STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG TABLE-PRICE OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		+td-margin({margin: 'mr-salat'})(class="divider-dark")
+																	tr
+																		td(align="center")
+																			table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																				tr
+																					td(align="left" width="265") 
+																						|&nbsp;
+																					td(align="center" width="80") 
+																						|&nbsp;
+																					td(align="center" width="272")
+																						table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; max-width: 100%;")
+																							tr
+																								td.text.text--light(align="left") subtotal:
+																								td(align="center" width="100%") 
+																									|&nbsp;
+																								td.h2(align="right") $418.99
+																				tr
+																					td(align="left" width="265") 
+																						|&nbsp;
+																					td(align="center" width="80") 
+																						|&nbsp;
+																					td(align="center" width="272")
+																						table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; max-width: 100%;")
+																							tr
+																								td.text.text--light(align="left") shipping:
+																								td(align="center" width="100%") 
+																									|&nbsp;
+																								td.h2(align="right") $0.00
+																				tr
+																					+td-margin({margin: 'mr-violet'})
+																				tr
+																					td(align="left" width="265") 
+																						|&nbsp;
+																					td(align="center" width="80") 
+																						|&nbsp;
+																					td(align="center" width="272")
+																						table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; max-width: 100%;")
+																							tr
+																								td.text.text--light(align="left") total:
+																								td(align="center" width="100%") 
+																									|&nbsp;
+																								td.total-price(align="right" width="98") $421 .00
+																	tr
+																		+td-margin({margin: 'mr-salat'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- TABLE-PRICE ENDS -->
+						tr
+							td(align="center")
+								include ../blocks/footer/footer-2.pug
+						tr
+							td(align="center")
+								<!-- MARGIN-40 STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG MARGIN-40 OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		+td-margin({margin: 'mr-red'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- MARGIN-40 ENDS -->
+						tr
+							+td-margin({height: 30 })
+		<!-- /BODY -->

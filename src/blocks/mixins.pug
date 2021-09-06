@@ -1,0 +1,52 @@
+- var image_path = 'images/';
+
+//- - var image_path = 'http://fourdinos.com/demo/lite2019/images/';
+
+//- - var image_path = 'https://raifmail2.indep.pro/images/';
+
+- var body_pading_l = '10';
+- var body_pading_r = '10';
+
+- var table_width = '700';
+
+- var body_width = '610';
+- var body_width_cupon = '614';
+- var body_width_code = '463';
+
+- var td_2_col_width = '332';
+- var td_3_col_width = '225';
+
+- var bg_body = '#E5E5E5';
+- var bg_table = '#FFFFFF';
+- var bg_table_gray = '#F8F8FA';
+
+
+- var td_3_pd_width = '4.4926%';
+- var td_4_pd_width = '9.1463%';
+
+- var IE_TABLE_START = '<!--[if (gte mso 9)|(IE)]><table width="'+body_width+'" align="center" border="0" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top"><![endif]-->';
+
+//-  вызов |!{IE_TABLE_START}
+
+- var IE_TABLE_START_2_COL = '<!--[if (gte mso 9)|(IE)]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="'+td_2_col_width+'" align="right" valign="top"><![endif]-->';
+
+- var IE_TABLE_START_3_COL = '<!--[if (gte mso 9)|(IE)]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="'+td_3_col_width+'" align="center" valign="top"><![endif]-->';
+
+- var IE_TABLE_END = '<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->';
+
+- var IE_TD_START_2_COL = '<!--[if (gte mso 9)|(IE)]></td><td  align="left" valign="middle" width="'+td_2_col_width+'"><![endif]-->';
+
+- var IE_TD_START_3_COL = '<!--[if (gte mso 9)|(IE)]></td><td  align="left" valign="top" width="'+td_3_col_width+'"><![endif]-->';
+
+include margin/margin.pug
+include td-margin/td-margin.pug
+include td-width/td-width.pug
+include IE/IE.pug
+include table-wraper/table-wraper.pug
+include icon-text/icon-text.pug
+include profile/profile.pug 
+include code/code.pug
+include title/title.pug
+include btn/btn.pug
+include ul/ul.pug
+include img/img.pug

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+html(lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="min-height: 100vh;")
+	include include/head.pug
+	+head('Mail-1')
+
+	body(style="min-height: 100vh;")
+		-var utm = '0404_bonuses';
+		-var link = '?utm_source=crm&utm_medium=email&utm_content=homepage&utm_campaign='+utm;
+
+		include ../blocks/mixins.pug						
+		<!-- BODY -->
+		table(align="center" border="0" bgcolor="#E5E5E5" cellpadding="0" cellspacing="0" width="100%" style="min-height: 100vh;")
+			tr 
+				td(align="center" valign="top" style="vertical-align: top;")
+					table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+						tr
+							+td-margin({height: 30 })
+						tr
+							td(align="center")
+								<!-- MARGIN-40 STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG HEADER-1 OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" class="display-width-inner" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		+td-margin({margin: 'mr-red'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- MARGIN-40 ENDS -->
+						tr
+							td(align="center")
+								include ../blocks/header/header-1.pug
+						tr
+							td(align="center")
+								<!-- TEXT-CONTENT STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG HEADER-1 OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" class="display-width-inner" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		+td-margin({margin: 'mr-red'})
+																	tr
+																		td.h2(align="left") Hi Lisa!!!
+																			br
+																			|dolor sit amet, consectetur adipiscing elit. Et volutpat amet cras sagittis, fermentum. Gravida nisi, nisl.
+																	tr
+																		+td-margin({margin: 'mr-salat'})
+																	tr
+																		td.text(align="left") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, mauris accumsan mattis amet in vulputate. Fermentum id vestibulum viverra amet tempor risus, quisque at.
+																	tr
+																		+td-margin({margin: 'mr-green'})
+																	tr
+																		td(align="left")
+																			a(href="#" target="_blank")
+																				img(src=image_path+"btn__230-01.png" border="0" alt="btn" width="230" height="54" style="display: block; width: 100%; max-width: 230px; height: auto; margin: 0; border: 0; padding: 0; outline: none;")
+																	tr
+																		+td-margin({margin: 'mr-viol'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- TEXT-CONTENT ENDS -->
+						tr
+							td(align="center")
+								include ../blocks/footer/footer-1.pug
+						tr
+							td(align="center")
+								<!-- MARGIN-40 STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG HEADER-1 OPTIONAL -->
+												table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+															+IE({width: body_width ,aling: 'center', valing: 'top'})
+															div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+																table(align="left" border="0" class="display-width-inner" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+																	tr
+																		+td-margin({margin: 'mr-red'})
+															|!{IE_TABLE_END}
+											|!{IE_TABLE_END}
+								<!-- MARGIN-40 ENDS -->
+						tr
+							+td-margin({height: 30 })
+		<!-- /BODY -->

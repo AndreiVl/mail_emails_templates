@@ -1,0 +1,25 @@
+mixin code(data)
+	<!-- BG CODE STARTS -->
+	table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+		tr
+			td(align="center")
+				+IE({width: table_width ,aling: 'center', valing: 'top'})
+				div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+					<!-- ID:BG CODE SECTION-1 -->
+					table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+						tr
+							td(align="center" style="padding-left: " + body_pading_l_1 + "px; padding-right: " + body_pading_r_1 + "px;")
+								+IE({width: body_width_code ,aling: 'center', valing: 'top'})
+								div(style="display: inline-block; width: 100%; max-width: " + body_width_code + "px; vertical-align: top;")
+									table(align="center" border="0" bgcolor=data.bg_color cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_code + "px;")
+										tr
+											+td-margin({height: '28'})
+										tr
+											<!-- ID:TXT CODE CONTENT -->
+											td.code-text(align="center")!=data.text
+												span.color-theme!=data.code
+										tr
+											+td-margin({height: '28'})
+								|!{IE_TABLE_END}
+				|!{IE_TABLE_END}
+	<!-- BG CODE ENDS -->

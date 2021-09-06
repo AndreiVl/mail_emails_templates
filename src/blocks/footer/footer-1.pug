@@ -1,0 +1,28 @@
+<!-- FOOTER-1 STARTS -->
+table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+	tr
+		td(align="center")
+			+IE({width: table_width ,aling: 'center', valing: 'top'})
+			div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+				<!-- ID:BG FOOTER-1 OPTIONAL -->
+				table(align="center" bgcolor="#FFFFFF" border="0" class="display-width" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+					tr
+						td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+							+IE({width: body_width ,aling: 'center', valing: 'top'})
+							div(style="display: inline-block; width: 100%; max-width: " + body_width + "px; vertical-align: top;")
+								table(align="left" border="0" class="display-width-inner" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+									tr
+										+td-margin({margin: 'mr-salat'})(class="divider")
+									tr
+										td.small-text(align="left") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel vestibulum rhoncus accumsan ut. Rutrum in imperdiet ut urna, faucibus. Et aenean at lectus suspendisse magna nunc risus 
+											a.link(href="#" target="_blank") phasellus
+											|. Tincidunt euismod consequat consectetur varius malesuada. Maecenas aliquam in mauris est.
+									tr
+										+td-margin({margin: 'mr-yelow'})
+									tr
+										td.small-text(align="left") © 2020 Our company. All rights reserved.
+									tr
+										+td-margin({margin: 'mr-red'})
+							|!{IE_TABLE_END}
+			|!{IE_TABLE_END}
+<!-- FOOTER-1 ENDS -->

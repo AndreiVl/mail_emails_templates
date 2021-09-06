@@ -1,0 +1,18 @@
+mixin IE(data)
+	- var table = '<!--[if (gte mso 9)|(IE)]><table aria-hidden="true" width="'+data.width+'" border="0" cellspacing="0" cellpadding="0"><tr><td align="'+data.aling+'" valign="'+data.valing+'" ><![endif]-->'
+
+	- var col = '<!--[if (gte mso 9)|(IE)]><table aria-hidden="true" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="'+data.width_col+'" align="'+data.aling+'" valign="'+data.valing+'" ><![endif]-->'
+
+		- var col_2 = '<!--[if (gte mso 9)|(IE)]><table aria-hidden="true" width="'+data.width+'" border="0" cellspacing="0" cellpadding="0"><tr><td width="'+data.width_col+'" align="'+data.aling+'" valign="'+data.valing+'" ><![endif]-->'
+
+	- var col_td = '<!--[if (gte mso 9)|(IE)]></td><td  width="'+data.width_col+'" align="'+data.aling+'" valign="'+data.valing+'"><![endif]-->'
+
+	if data.col == 2
+		!=col
+	else if data.col == 3
+		!=col_2
+		
+	else if data.col_td == 2
+		!=col_td
+	else
+		!=table

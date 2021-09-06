@@ -1,0 +1,14 @@
+.text {
+	margin: 0;
+
+	font-family: $font-main; 
+	font-size: 14px;
+	font-weight: 400; 
+	line-height: 20px;
+	color: $color-blue500;
+	text-decoration: none;
+	mso-line-height-rule: exactly;
+}
+.text--light {
+	color: $color-blue300;
+}
